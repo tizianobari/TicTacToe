@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head> 
+		<title> Login tris </title>
+		<script>
+			function click()
+			{
+				var prova = 5;
+				console.log(prova);
+			}
+		</script>
+	</head>
+	<body>
+		<h1> <b>Login TicTacToe</b> </h1> <br>
+		<form method="post" action="index.php">
+			Username: <input type="text" name="username" id="username"> <br>
+			Password: <input type="password" name="password" id="password"> <br>
+			<input type="button" value="Login" onclick="click()">
+		</form>
+		<br> <?php echo isset($log) ? $log : "" ?> <br>
+		<a href="registrazioneView.php"> Registrazione </a>
+	</body>
+</html>
