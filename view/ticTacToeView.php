@@ -10,6 +10,7 @@ include 'controller/ticTacToeController.php'; ?>
 			.bottone
 			{
 				width:45px;
+				height:45px;
 			}
 		</style>
 	</head>
