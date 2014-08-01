@@ -5,15 +5,15 @@
 		static function salvaPartitaFile($grill)
 		{
 			// Apertura del file
-			if ( file_exists('partite.csv') )
+			if ( file_exists($grill->namePlayer1.".csv") )
 			{
 				// Apertura del file in lettura/scritura partendo dall'inizio del file
-				$file = fopen('partite.csv', 'r+');
+				$file = fopen($grill->namePlayer1.".csv", 'r+');
 			}
 			else
 			{
 				// Apertura/creazione del file in lettura/scrittura partendo dalla fine del file
-				$file = fopen("partite.csv", "w+");
+				$file = fopen($grill->namePlayer1.".csv", "w+");
 			}
 			// Verifica della presenza di una partita salvata precedentemente
 			$found = false;
@@ -71,15 +71,15 @@
 			$grill = new Griglia("");
 			$numberMatch = $_POST['numberMatch'];
 			// Apertura del file
-			if ( file_exists('partite.csv') )
+			if ( file_exists($grill->namePlayer1.".csv") )
 			{
 				// Apertura del file in lettura/scrittura partendo dall'inizio del file
-				$file = fopen('partite.csv', 'r+');
+				$file = fopen($grill->namePlayer1.".csv", 'r+');
 			}
 			else
 			{
 				// Apertura/creazione del file in lettura/scrittura partendo dalla fine del file
-				$file = fopen("partite.csv", "w+");
+				$file = fopen($grill->namePlayer1.".csv", "w+");
 			}
 			// Verifica della presenza di una partita salvata precedentemente
 			$found = false;
