@@ -8,8 +8,8 @@
 	<body>
 		<h1> <b> Registrazione </b> </h1>
 		<!-- <form method="post" action="registrazioneView.php"> -->
-			<input type="text" name="username" id="username">
-			<input type="password" name="password" id="password">
+			Username: <input type="text" name="username" id="username"> <br>
+			Password: <input type="password" name="password" id="password"> <br>
 			<button id="submit"> Registra </button>
 		<!-- </form> -->
 		<br> <p id="log"> </p>

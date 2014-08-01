@@ -7,7 +7,6 @@
 	
 	if ( isset($_POST['username']) && isset($_POST['password']) && $_POST['username'] != "" && $_POST['password'] != "")
 	{
-
 		// Verifico che i dati siano giusti, confrontandoli nel file con i login (info.csv)
 		$file = fopen("info.csv", "r");
 		
